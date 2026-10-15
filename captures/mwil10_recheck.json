@@ -1,0 +1,52 @@
+[
+  {
+    "elapsed_s": 0.531,
+    "raw_hex": "4d57494c31312c31342c30312c44314234423032352c31362c30302c30332c30302c30312c30452c30452c30312c30302c30302c30302c",
+    "raw_ascii": "MWIL11,14,01,D1B4B025,16,00,03,00,01,0E,0E,01,00,00,00,",
+    "parsed": {
+      "raw": "MWIL11,14,01,D1B4B025,16,00,03,00,01,0E,0E,01,00,00,00,",
+      "temp_setting": 20,
+      "flame_setting": 1,
+      "opaque_field3": "D1B4B025",
+      "temp_reading": 22,
+      "state": 0,
+      "op_state": 3,
+      "mode_name": "external",
+      "current_flame": 0,
+      "current_fan": 1,
+      "auto_timer_slot": 14,
+      "auto_time_day": 14,
+      "wifi_modv_comms": 1,
+      "led_r": 0,
+      "led_g": 0,
+      "led_b": 0,
+      "burner_active": false,
+      "is_off": false
+    }
+  },
+  {
+    "elapsed_s": 0.523,
+    "raw_hex": "4d57494c31312c31342c30312c44314234423032352c31362c30302c30332c30302c30312c30452c30452c30312c30302c30302c30302c",
+    "raw_ascii": "MWIL11,14,01,D1B4B025,16,00,03,00,01,0E,0E,01,00,00,00,",
+    "parsed": {
+      "raw": "MWIL11,14,01,D1B4B025,16,00,03,00,01,0E,0E,01,00,00,00,",
+      "temp_setting": 20,
+      "flame_setting": 1,
+      "opaque_field3": "D1B4B025",
+      "temp_reading": 22,
+      "state": 0,
+      "op_state": 3,
+      "mode_name": "external",
+      "current_flame": 0,
+      "current_fan": 1,
+      "auto_timer_slot": 14,
+      "auto_time_day": 14,
+      "wifi_modv_comms": 1,
+      "led_r": 0,
+      "led_g": 0,
+      "led_b": 0,
+      "burner_active": false,
+      "is_off": false
+    }
+  }
+]
