@@ -44,6 +44,11 @@ class RealFlameClimate(CoordinatorEntity[RealFlameCoordinator], ClimateEntity):
     _attr_max_temp = TEMP_MAX
     _attr_target_temperature_step = 1.0
 
+    @property
+    def extra_state_attributes(self) -> dict[str, int] | None:
+        st = self.coordinator.status
+        return {"fan_level": st.current_fan} if st else None
+
     def __init__(self, coordinator: RealFlameCoordinator, entry: ConfigEntry) -> None:
         super().__init__(coordinator)
         self._entry = entry

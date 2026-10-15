@@ -22,7 +22,6 @@ async def async_setup_entry(
     async_add(
         [
             RealFlameBurner(coordinator, entry),
-            RealFlameFan(coordinator, entry),
         ]
     )
 
@@ -51,15 +50,3 @@ class RealFlameBurner(_Base):
         st = self.coordinator.status
         return st.burner_active if st else None
 
-
-class RealFlameFan(_Base):
-    _attr_name = "Fan"
-    _attr_device_class = BinarySensorDeviceClass.RUNNING
-
-    def __init__(self, coordinator, entry):
-        super().__init__(coordinator, entry, "fan")
-
-    @property
-    def is_on(self) -> bool | None:
-        st = self.coordinator.status
-        return (st.current_fan > 0) if st else None

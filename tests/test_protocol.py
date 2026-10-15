@@ -163,3 +163,9 @@ def test_burner_active_via_state_field():
     assert parse_status("MWIL11,19,01,030F3A27,16,01,00,00,03,0E,0E,01,00,00,00,").burner_active
     # Off with fan run-on resting value
     assert not parse_status("MWIL11,14,01,030F3B29,16,00,04,00,01,0E,0E,01,00,00,00,").burner_active
+
+
+def test_no_fan_binary_sensor():
+    src = (PKG / "binary_sensor.py").read_text()
+    assert "RealFlameFan" not in src
+    assert "RealFlameBurner" in src
